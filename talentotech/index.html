@@ -3,78 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina web - pagina de practica</title>
-    
-    <style type="text/css">
+    <title>Tablas y listas</title>
+    <style type= "text/css">
     body{
-        background-color: rgb(197, 197, 197);
+        font-family: arial, Arial, Helvetica, sans-serif;
+        margin: 20px;
     }
-
-    img{
-        width: 250px;
+    h1{
+        color: red;
     }
-
-    h2{
-        color: rgb(216, 142, 32);
+        
+    ul{
+        list-style-type: disc;
+        margin-left: 10px;
+    }
+    table{
+        background-color: darkgray;
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    th td{
+        border: 1px solid #ddd;
+        padding: 5px;
+    }
+    th{
+        background-color: #d4d1d0;
         text-align: center;
     }
-
-    
     p{
-        color: black;
-        text-align: justify;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: 'Times New Roman', Times, serif;
         font-size: 20px;
+        color: #000000;
+    }
+    footer{
+        text-align: center;
+        color: aquamarine;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    table{
-        border-radius: 12px;
-        text-decoration: none;
-    }
-    
-    h3{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
-        color: rgb(142, 142, 44);
-    }
     </style>
 </head>
-
 <body>
-    <h1 style="font-size: 60px; color: brown; text-align: center; font-family: Arial, Helvetica, sans-serif;">Bienvenidos a este sitio web 2025</h1><br><br><hr>
+    <header title="Listas y tablas">
+        <h1>Bienvenido a aprendizaje de listas y tablas</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a> </li>
+                <li><a href="#acercade">A cerca de</a> </li>
+                <li><a href="#contacto">Contacto</a> </li>
+                <li><a href="#servicio">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="listas">
+        <h1>Listas y tablas en html</h1>
+        <h2>Listas de redes sociales</h2>
+        <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Twitter (X)</li>
+        </ul>
+    </section>
+    <section id="acerca">
+        <h2>Tabla de redes sociales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre red social</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="imagenes/imagenes/ins1.jpg" width="30%" height="50%" ></td>
+                    <td>Instagram</td>
+                    <td>
+                        <p align="justify">
+                            Instagram es una red social y aplicación móvil gratuita para compartir fotos y vídeos, propiedad de Meta. Permite a los usuarios subir contenido multimedia, editarlo con filtros, organizarlo con hashtags y geolocalizarlo. Los usuarios pueden interactuar a través de comentarios, me gusta y mensajes directos. 
+                            
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/imagenes/fac1.png" width="30%" height="50%" ></td>
+                    <td>Facebook</td>
+                    <td>
+                        <p align="justify">
+                         Facebook es una red social diseñada para conectar a personas, facilitando la interacción entre amigos, familiares, compañeros de trabajo y personas con intereses comunes. Con más de 2.800 millones de usuarios activos mensuales hasta 2023, sigue siendo una de las plataformas sociales más grandes del mundo. En Facebook, los usuarios pueden interactuar a través de comentarios, mensajes privados, participación en grupos y páginas, y mediante transmisiones de video en directo a través de Facebook Live.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/imagenes/twi1.jpg" width="30%" height="50%" ></td>
+                    <td>Twitter</td>
+                    <td>
+                        <p align="justify">
+                            Twitter, ahora conocido como X, es una plataforma de red social de microblogging que permite a los usuarios publicar mensajes cortos de texto, conocidos como "tweets", y también compartir imágenes, videos, GIF, y más. Los mensajes pueden tener hasta 280 caracteres.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-    <h2 style="color: blue; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Redes sociales</h2>
-    <br><br>
-
-    <h3> Dia Martes</h3>
-    <h4 style="color: violet;">Dia Miercoles</h4>
-    <h5 style="color: yellow;"> Dia Jueves</h5>
-    <h6 style="color: blue;"> Dia Viernes</h6>
-    <br><br><br><hr>
-
-    <table border="2px">
-    <tr>
-        <th>redes social</th>
-        <th>imagen de red social</th>
-    </tr>
-    <tr>
-        <td>Facebook</td>
-        <td><img src="./imagenes/facebook.png" alt="facebook"></td>
-    </tr>
-    <tr>
-        <td>Instagram</td>
-        <td><img src="./imagenes/instagram.png" alt="instagram" srcset=""></td>
-    </tr>
-    <tr>
-        <td>Twiter</td>
-    </tr>
-    </table> 
-<br><br>
-
-<h2>Conoce de redes sociales</h2>
-    <p>Nuevo texto de prueba sobre html y css</p><br><br>
-    <img src="./imagenes/redes_sociales.png" alt="redes sociales"><br><br>
-
-<footer>&copy;Olga</footer>   
+    </section>
+    <section id="contacto">
+        
+            <h2>Sección de contacto</h2>
+               
+        <p>
+            Si tienes dudas favor contactarme al Whatsapp o al correo electrónico
+        </p>
+        <!--- Si deseas agregar información lo puedes hacer -->
+    </section>
+    <footer>
+        <p>
+            &copy; Derechos reservados ARLES GARCIA CASTAÑO
+        </p>
+  
+</footer>
 </body>
 </html>
