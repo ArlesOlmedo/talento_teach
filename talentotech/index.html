@@ -41,7 +41,47 @@
         color: aquamarine;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px  rgba(0, 0, 0, 10px)
+        }
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        label{
+            display: block;
+            margin: 10px  0 5px;
+            font-weight: bold;
 
+        }
+        input, textarea, select{
+            width: 100px;
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 1px solid;
+            color: #333;
+            border-radius: 4px;
+        }
+        input[type="submit"]{
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: greenyellow;
+        }
     </style>
 </head>
 <body>
@@ -121,7 +161,36 @@
         <p>
             &copy; Derechos reservados ARLES GARCIA CASTAÑO
         </p>
+    </footer>
+  <hr>
+  <!--Desde acá código de formulario-->
   
-</footer>
+        
+
+<div class="container">
+    <h1>Formularo de contacto</h1>
+    <form action="#" method="post"></form>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" required>
+    <label for="email">Correo electrónico</label>
+    <input type="text" id="email" required>
+    <label for="telefono">Teléfono</label>
+    <input type="text" id="Teléfono" required>
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="Mensaje" rows="4" required></textarea>
+    <label for="pais">País</label>
+    <input type="text" id="Mensaje" required>
+    <select id="pais" name="País" required>
+        <option value="disabled select">Selecciona tu país</option>
+        <option value="es">España</option>
+        <option value="co">Colombia</option>
+        <option value="mx">México</option>
+        <option value="ar">Argentina</option>
+    </select>
+    <input type="submit" value="Enviar">
+    </form>    
+</div> 
+  <!-- Acá temina el código del formulario-->
+
 </body>
 </html>
